@@ -1,0 +1,163 @@
+<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			 margin:0;
+			 font-family: Arial;
+			 padding: 10px;
+			 background-image: url();
+		}
+		/*style the header */
+		.header {
+			background-color: black;
+			padding: 20px;
+			text-align: center;
+			color: white;
+		}
+		.header h1 {
+			font-size: 50px;
+		}
+		/*style the top navigation bar*/
+		.topnav {
+			overflow: hidden;
+			background-color: red;
+		}
+		/* style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: gray;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		/*Change color on hover*/
+		.topnav a :hover {
+			background-color: red;
+			color:black;
+		}
+		/* Create two unequal columns that floats next to each other */
+		/* left column */
+		.leftcolumn {
+			float: left;
+			width: 75%;
+		}
+		/* right column */
+		.rightcolumn {
+			float:left;
+			width: 25%;
+			background-color: red;
+			padding-left: 20px;
+		}
+		/* Fake image */
+		.fakeimg {
+			background-color: white;
+			width:100%;
+			padding: 20px;
+		}
+		/* add a card effect for articales */
+		.card {
+			background-color: white;
+			padding:20px;
+			marfin-top:20px;
+			font-style: white;
+		}
+		/* Clear floats after the culumns */
+		.row::after {
+			content: "";
+			display: table;
+			clear:both;
+		}
+		/* Footer */
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: white;
+			margin-top: 20px;
+		}
+		/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of nexr to each other */
+		@media screen and (max-width: 500px) {
+			.leftcolumns, .rightcolumn {
+				width:100px;
+				padding:0;
+			}
+		}
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top each other instead of next to each other */
+		@media screen and (max-width: 500px) {
+			.topnav a{
+				float: none;
+				width: 100%;
+
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="man.jpeg"height="80%"width="100%">
+		<p><tb>CLUB INGGRIS MANCTHER UNITED.</p>
+	</div>
+
+	<div class="topnav">
+		<a href="home.html">Link1</a>
+		<a href="#">Link2</a>
+		<a href="#">Link3</a>
+		<a href="#" style="float: right;">link4</a>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2> KLUB MANCHESTER UNITED</h2>
+				<h5>Title description, Dec 7, 2017</h5>
+				<img src="garnaco.jpg"height="100%"width="100%">
+				<p>Some text...</p>
+				<p>KLUB TERHEBAT DI INGGRIS,TENTU SAJA NAMANYA MACHERTER UNITED.</p>
+			</div>
+			<div class="card">
+				<h2> CRISTIAN RONALDO</h2>
+				<h5>Title description, Sep 2, 2017</h5>
+				<img src="CR7.jpg"height="100%"width="100%">
+				<p>Some text...</p>
+				<p>CR7,ATAU DI SEBUT CRISTARONALDO ADALAH PEMAIN TERBAIK DI DUNIA,IA DI SEBUT JUGA DENGAN NAMA GOAT.</p>
+			</div>
+	</div>
+	<div class="rightcolumn">
+		<div class="card">
+			<h2><B>NEYMAR JR </h2>
+			<img src="grub.jpg"height="50%"width="100%">
+			<p> Some text about me in cupla qui officia deserunt mollit anim...</p>
+		</div>
+		<div class="card">
+			<h2><B>MENJELANG TURNAMEN UCL </h2>
+			<img src="CLUB.jpg"height="50%"widht="50%">
+			<p> Some text about me in cupla qui officia deserunt mollit anim...</p>
+		</div>
+		<div class="card">
+			<h2> About Me </h2>
+			<img src="ucl.jpg"height="50%"widht="50%">
+			<p> Some text about me in cupla qui officia deserunt mollit anim...</p>
+		</div>
+		<div class="card">
+			<h2> About Me </h2>
+			<img src="fu cup.jpg"height="65%"widht="70%">
+			<p> Some text about me in cupla qui officia deserunt mollit anim...</p>
+		</div>
+		<div class="card">
+			<h3>Popular Post</h3>
+			<div class="fakeimg"><p>Image</p></div>
+			<div class="fakeimg"><p>Image</p></div>
+			<div class="fakeimg"><p>Image</p></div>
+		</div>
+		<div class="card">
+			<h3>Follow Me</h3>
+			<p>@DAVZZ</p>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<h2>Hatur Nuhun</h2>
+</div>
+</body>
+	</html>
